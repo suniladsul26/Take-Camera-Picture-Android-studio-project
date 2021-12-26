@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageAnalysis"
+    android:padding="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/image_view_object"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btn_capture_object"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capture"
+        android:layout_above="@+id/btn_process_object"
+        />
+
+    <Button
+        android:id="@+id/btn_process_object"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Analyze"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/text_result_object"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please click button to analyze any Image with Azure Cognitive Service"
+        android:layout_above="@+id/btn_capture_object"
+        />
+
+</RelativeLayout>
